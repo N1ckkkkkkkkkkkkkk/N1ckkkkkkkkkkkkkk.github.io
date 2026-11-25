@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>uni. — Un Nuevo Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">uni.</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#galeria" data-i18n="nav.explore">Explorar</a>
+        <a href="#categorias" data-i18n="nav.categories">Categorías</a>
+        <a href="#puntos" data-i18n="nav.points">Puntos</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="#" class="btn btn-ghost" data-i18n="nav.login">Iniciar sesión</a>
+        <a href="#" class="btn btn-primary" data-i18n="nav.upload">Subir proyecto</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge" data-i18n="hero.badge">Comunidad de diseñadores</span>
+          <h1 data-i18n="hero.title">Tu nuevo inicio en el diseño</h1>
+          <p data-i18n="hero.desc">Una plataforma pensada para diseñadores gráficos novatos donde compartir, descubrir y aprender a través de plantillas y proyectos reales creados por la comunidad</p>
+          <div class="hero-buttons">
+            <a href="#galeria" class="btn btn-primary" data-i18n="hero.cta1">Explorar plantillas</a>
+            <a href="#puntos" class="btn btn-outline" data-i18n="hero.cta2">Cómo funciona</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>2.4k+</strong><span data-i18n="hero.stat1">plantillas</span></div>
+            <div class="stat"><strong>860+</strong><span data-i18n="hero.stat2">diseñadores</span></div>
+            <div class="stat"><strong>4</strong><span data-i18n="hero.stat3">categorías</span></div>
+          </div>
+        </div>
+        <div class="hero-preview" aria-hidden="true">
+          <div class="preview-card">
+            <img class="preview-thumb" src="assets/transporteleon.2.png" alt="Previsualización de plantilla" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="categorias" class="section categories">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="cat.title">¿Por qué quieres empezar?</h2>
+          <p data-i18n="cat.desc">Elige el área que más te inspira y comienza a crear con plantillas hechas por la comunidad</p>
+        </div>
+        <div class="cat-grid">
+          <article class="cat-card cat-blue">
+            <div class="cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 7h.01M7 12h.01M7 17h.01M11 7h6M11 12h6M11 17h6"/></svg>
+            </div>
+            <h3>Social media</h3>
+            <p class="cat-sub">Posts, historias y carruseles listos para adaptar</p>
+            <span class="cat-count">2 PLANTILLAS</span>
+          </article>
+          <article class="cat-card cat-light">
+            <div class="cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3>Packaging</h3>
+            <p class="cat-sub">Cajas, etiquetas y envases con personalidad</p>
+            <span class="cat-count">1 PLANTILLAS</span>
+          </article>
+          <article class="cat-card cat-navy">
+            <div class="cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Diseño UX/UI</h3>
+            <p class="cat-sub">Pantallas, apps y webs para practicar interfaces</p>
+            <span class="cat-count">2 PLANTILLAS</span>
+          </article>
+          <article class="cat-card cat-pastel">
+            <div class="cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3>Mockup</h3>
+            <p class="cat-sub">Logos, papelería y manuales de marca</p>
+            <span class="cat-count">1 PLANTILLAS</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="gal.title">Plantillas y proyectos de la comunidad</h2>
+          <p data-i18n="gal.desc">Explora los trabajos compartidos por diseñadores de todo el mundo</p>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all" data-i18n="fil.all">Todos</button>
+          <button class="filter" data-filter="social" data-i18n="fil.sm">Social media</button>
+          <button class="filter" data-filter="brand" data-i18n="fil.br">Mockup</button>
+          <button class="filter" data-filter="fav" data-i18n="fil.fav">Mis favoritos</button>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card" data-cat="social">
+            <div class="project-thumb">
+              <span class="project-tag">Social media</span>
+              <img src="assets/papeleria.4.png" alt="Papelería" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>1.2k usos</span>
+                <span class="points">+120 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="social">
+            <div class="project-thumb">
+              <span class="project-tag">Social media</span>
+              <img src="assets/chips.5.jpg" alt="Empaque de chips" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>720 usos</span>
+                <span class="points">+105 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="social">
+            <div class="project-thumb">
+              <span class="project-tag">Social media</span>
+              <img src="assets/tequeño.6.png" alt="Tequeños" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>640 usos</span>
+                <span class="points">+90 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="social">
+            <div class="project-thumb">
+              <span class="project-tag">Social media</span>
+              <img src="assets/gym.7.png" alt="Gym" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>580 usos</span>
+                <span class="points">+130 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="packaging">
+            <div class="project-thumb">
+              <span class="project-tag">Mockup</span>
+              <img src="assets/uam.8.png" alt="UAM" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>490 usos</span>
+                <span class="points">+95 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="packaging">
+            <div class="project-thumb">
+              <span class="project-tag">Mockup</span>
+              <img src="assets/uam.9.png" alt="UAM" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>410 usos</span>
+                <span class="points">+88 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="packaging">
+            <div class="project-thumb">
+              <span class="project-tag">Mockup</span>
+              <img src="assets/uam.10.jpg" alt="UAM" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>360 usos</span>
+                <span class="points">+80 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="social">
+            <div class="project-thumb">
+              <span class="project-tag">Social media</span>
+              <img src="assets/Elorza.12.png" alt="Elorza" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>520 usos</span>
+                <span class="points">+115 pts</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card" data-cat="social">
+            <div class="project-thumb">
+              <span class="project-tag">Social media</span>
+              <img src="assets/vnzla.13.png" alt="Venezuela" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <span class="author">por @N1CKKKK</span>
+              <div class="project-meta">
+                <span>610 usos</span>
+                <span class="points">+125 pts</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="puntos" class="section points">
+      <div class="container points-grid">
+        <div class="points-left">
+          <span class="points-tag">SISTEMA DE PUNTOS</span>
+          <h2 class="points-title">Tu trabajo, reconocimiento</h2>
+          <p class="points-desc">Cada vez que alguien usa tu plantilla, sumas puntos. Más puntos, más visibilidad en la comunidad</p>
+          <div class="points-levels">
+            <span class="points-levels-label">NIVELES</span>
+            <div class="level-badges">
+              <span class="badge-level">Semilla <strong>0 pts</strong></span>
+              <span class="badge-level">Brote <strong>100 pts</strong></span>
+              <span class="badge-level">Creativo <strong>500 pts</strong></span>
+              <span class="badge-level">Referente <strong>2k+ pts</strong></span>
+            </div>
+          </div>
+        </div>
+        <div class="points-right">
+          <article class="point-card">
+            <div class="point-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <div class="point-body">
+              <span class="point-step">01 Sube</span>
+              <p>Publica tus proyectos y plantillas para que la comunidad los use</p>
+            </div>
+          </article>
+          <article class="point-card">
+            <div class="point-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <div class="point-body">
+              <span class="point-step">02 Comparte</span>
+              <p>Otros diseñadores descubren y descargan tu trabajo</p>
+            </div>
+          </article>
+          <article class="point-card">
+            <div class="point-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <div class="point-body">
+              <span class="point-step">03 Gana</span>
+              <p>Recibe puntos y reconocimiento por cada uso</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section about">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="about.title">Conoce a nuestras fundadoras</h2>
+        </div>
+        <div class="founders">
+          <article class="founder-card">
+            <div class="founder-avatar" aria-hidden="true">AM</div>
+            <div class="founder-info">
+              <h3>Andrea Márquez <span class="founder-points">2.15k pts</span></h3>
+              <p class="founder-role">Diseñadora Gráfica</p>
+              <p class="founder-bio" data-i18n="about.bio">Diseñadora gráfica especializada en identidad visual y branding, enfocada en crear experiencias visuales modernas y funcionales</p>
+              <div class="founder-links">
+                <a href="https://instagram.com/iamandy_26" target="_blank" rel="noopener" aria-label="Instagram de Andrea Márquez">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://behance.net/andreamarquez" target="_blank" rel="noopener" aria-label="Behance de Andrea Márquez">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><text x="3" y="18" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15">B</text><text x="13" y="18" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="15">e</text><line x1="13" y1="7" x2="19" y2="7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </a>
+                <a href="mailto:andreasaraism@gmail.com" aria-label="Correo de Andrea Márquez">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="founder-card">
+            <div class="founder-avatar" aria-hidden="true">N1</div>
+            <div class="founder-info">
+              <h3>N1CKKK <span class="founder-points">2.15k pts</span></h3>
+              <p class="founder-role">Diseñadora Gráfica</p>
+              <p class="founder-bio">Diseñadora gráfica especializada en múltiples disciplinas, combinando su experiencia técnica con el arte digital y la ilustración</p>
+              <div class="founder-links">
+                <a href="https://www.instagram.com/nickpriv598?cplk=NXRkMDluaW5mbjFk" target="_blank" rel="noopener" aria-label="Instagram de N1CKKK">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.behance.net/alexmendoza65" target="_blank" rel="noopener" aria-label="Behance de N1CKKK">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><text x="3" y="18" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="15">B</text><text x="13" y="18" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="15">e</text><line x1="13" y1="7" x2="19" y2="7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </a>
+                <a href="mailto:nckkkk@gmail.com" aria-label="Correo de N1CKKK">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <div class="contact-card contact-layout">
+          <div class="contact-left">
+            <span class="contact-tag">CONTACTO</span>
+            <h2 class="contact-title">Hablemos</h2>
+            <p class="contact-desc">¿Tienes dudas, ideas o quieres colaborar con uni? Escríbenos o síguenos en redes</p>
+          </div>
+          <div class="contact-right">
+            <a href="mailto:uni.webside@gmail.com" class="contact-item">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div class="contact-text">
+                <span class="contact-label">CORREO</span>
+                <span class="contact-value">uni.webside@gmail.com</span>
+              </div>
+              <span class="contact-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">uni.</span>
+        <p class="tagline" data-i18n="footer.tagline">Un Nuevo Inicio</p>
+      </div>
+      <p class="copyright" data-i18n="footer.copy">© 2026 uni. Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
